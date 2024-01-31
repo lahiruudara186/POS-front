@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* > * {
+    font-family: "Poppins", cursive;
+    margin: 0;
+}
+
+body{
+  /* background: #0f0c29;  */
+   /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);   */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #24243e, #302b63, #0f0c29);  */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #111111;
+padding: 25px;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.register{
+  /* width: 100vw; */
+  width: 100%;
+  display:flex;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  background-color: white;
+  align-content: center;
+}
+
+.register span{
+  color: #adb5bd;
+}
+
+#form{
+  max-width: 320px;
+  width: 100vw;
+  margin: 2em auto;
+}
+
+#form >  input, .btn{
+  border: 1px solid #e9ecef;
+  padding: .9em 1em;
+}
+
+#form > input:focus{
+  outline: none;
+}
+
+#form > .btn{
+  background-color: #000000;
+  color: #e9ecef;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.flex{
+  display: flex;
+  gap: 1em;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.register .col-1{
+  width: 100%;
+  margin: auto;
+  padding: 3em 0;
+}
+
+.register .col-2 img{
+  width: 480px;
+  height: 100%;
+  object-fit: cover;
+  align-self: flex-end;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+}
+
+.formtxt{
+    
+    text-align: center;
+}
+
+.spantext{
+ 
+  justify-content: center;
+}
+
+.cardText{
+  color: rgb(0, 0, 0);
+  font-size:35;
+  font-weight: bold;
+  /* size: 50rem; */
+}
+
+.cardNum{
+  color: rgb(0, 0, 0);
+  font-size:x-large;
+  font-weight: bold;
+}
+
+.cardD{
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 15%;
+  height: 250px;
+  text-align: right;
+  padding: 25px 25px 25px 25px;
+}
+
+.duButtons{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  margin-right: 0.25rem;
+  margin-top: 0.25rem;
+  padding: 5px;
+}
+
+.duButtons:hover{
+  background-color: rgb(255, 255, 255);
+  color: #000;
+}
+
+.subtxt{
+  color: rgb(75, 74, 74);
+  font-size: smaller;
+  text-align: center;
+  padding: 5px;
+}
+
+.warning{
+  height: 40px;
+  width: 250px;
+  position: relative;
+  right: 0;
+  top: 10%;
+  background-color: #adb5bd;
+  font-size: 1.1rem;
+  color: #000;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 860px)  {
+  .register .col-2 img{
+    display: initial;
+  }
+}
